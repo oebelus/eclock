@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 10px;
+  }
+}
