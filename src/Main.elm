@@ -77,12 +77,12 @@ view model =
         ]
     [ h1 [ Html.Attributes.style "margin" "0"
         , Html.Attributes.style "color" "rgb(0, 183, 235)"
-        , Html.Attributes.style "font-size" "22vw"
+        , Html.Attributes.style "font-size" "min(20vh, 22vw)"
         ] 
         [ text (hour ++ ":" ++ minute) ]
     , h2 [ Html.Attributes.style "margin" "0"
         , Html.Attributes.style "color" "rgb(0, 183, 235)"
-        , Html.Attributes.style "font-size" "18vw"
+        , Html.Attributes.style "font-size" "min(15vh, 18vw)"
         ] 
         [ text (if length second == 1 then "0" ++ second else second) ] 
     , Svg.svg
