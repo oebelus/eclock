@@ -5797,7 +5797,7 @@ var $author$project$Main$view = function (model) {
 					[
 						A2($elm$html$Html$Attributes$style, 'margin', '0'),
 						A2($elm$html$Html$Attributes$style, 'color', 'rgb(0, 183, 235)'),
-						A2($elm$html$Html$Attributes$style, 'font-size', '22vw')
+						A2($elm$html$Html$Attributes$style, 'font-size', 'min(20vh, 22vw)')
 					]),
 				_List_fromArray(
 					[
@@ -5809,11 +5809,12 @@ var $author$project$Main$view = function (model) {
 					[
 						A2($elm$html$Html$Attributes$style, 'margin', '0'),
 						A2($elm$html$Html$Attributes$style, 'color', 'rgb(0, 183, 235)'),
-						A2($elm$html$Html$Attributes$style, 'font-size', '18vw')
+						A2($elm$html$Html$Attributes$style, 'font-size', 'min(15vh, 18vw)')
 					]),
 				_List_fromArray(
 					[
-						$elm$html$Html$text(second)
+						$elm$html$Html$text(
+						($elm$core$String$length(second) === 1) ? ('0' + second) : second)
 					])),
 				A2(
 				$elm$svg$Svg$svg,
