@@ -7,6 +7,7 @@ import Time
 import Html.Attributes
 import Svg exposing (circle)
 import Svg.Attributes exposing (..)
+import String exposing (length)
 
 -- MAIN
 
@@ -83,7 +84,7 @@ view model =
         , Html.Attributes.style "color" "rgb(0, 183, 235)"
         , Html.Attributes.style "font-size" "18vw"
         ] 
-        [ text (second) ] 
+        [ text (if length second == 1 then "0" ++ second else second) ] 
     , Svg.svg
         [ Svg.Attributes.width "90vw"
         , Svg.Attributes.height "90vh"
